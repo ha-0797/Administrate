@@ -4,12 +4,10 @@ import AddressDetails from './AddressDetails';
 
 const AddressBook = () => {
     const { addresses } = useContext(AddressContext);
-    console.log(addresses);
     return addresses.length ? ( 
         <div className="address-book">
             <ul>
                 {addresses.map( (address) =>{
-                    console.log(address);
                     return(<AddressDetails address={address} key={address.id}/>)
                 })}
             </ul>

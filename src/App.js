@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <AddressContextProvider>
         <NavBar />
-        <AddressBook />
         <AddressForm />
+        <AddressBook />
       </AddressContextProvider>
     </div>
   );
