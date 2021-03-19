@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react';
-import { AddressContext } from '../contexts/AddressContext';
+import React, { useContext } from 'react';
+import { OrgContext } from '../contexts/OrgContext';
 
 const NavBar = () => {
-    const { addresses } = useContext(AddressContext);
+    const { orgs } = useContext(OrgContext);
     return ( 
-        <div className="address-book">
-            <h1>Administrate Address Book</h1>
-            <p>You currently have {addresses.length} addresses</p>
+        <div className="Org-book">
+            <h1>Administrate Org Book</h1>
+            <p>You currently have {orgs.length} orgs</p>
         </div>
      );
 }

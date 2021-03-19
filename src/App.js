@@ -1,16 +1,16 @@
-import AddressContextProvider from './contexts/AddressContext';
-import AddressBook from './components/AddressBook';
+import OrgContextProvider from './contexts/OrgContext';
+import OrgBook from './components/OrgBook';
 import NavBar from './components/Navbar';
-import AddressForm from './components/AddressForm';
+import OrgForm from './components/OrgForm';
 
 function App() {
   return (
     <div className="App">
-      <AddressContextProvider>
+      <OrgContextProvider>
         <NavBar />
-        <AddressForm />
-        <AddressBook />
-      </AddressContextProvider>
+        <OrgForm />
+        <OrgBook />
+      </OrgContextProvider>
     </div>
   );
 }

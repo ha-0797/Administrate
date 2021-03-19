@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react';
-import { AddressContext } from '../contexts/AddressContext';
+import { OrgContext } from '../contexts/OrgContext';
 
-const AddressForm = () => {
-    const { addAddress } = useContext(AddressContext);
+const OrgForm = () => {
+    const { addOrg } = useContext(OrgContext);
     const [name, setName] = useState('');
     const [contact, setContact] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
-        addAddress(name, contact);
+        addOrg(name, contact);
         setName('');
         setContact('');
     };
@@ -22,4 +22,4 @@ const AddressForm = () => {
      );
 }
  
-export default AddressForm;
+export default OrgForm;
